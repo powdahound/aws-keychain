@@ -116,9 +116,9 @@ aws_keychain_format_credentials() {
   local id="$1"
   local secret="$2"
   cat <<END
-[Credentials]
-AWSAccessKeyId=$id
-AWSSecretKey=$secret
+[default]
+aws_access_key_id=$id
+aws_secret_access_key=$secret
 END
 }
 
